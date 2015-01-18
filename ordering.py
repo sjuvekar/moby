@@ -20,7 +20,7 @@ def orderMetric(truth,n):
 	return np.array([(np.sum(pad_[(i-n):i+n]) - pad_[i])/(2*n-1) for i in range(n,pad_.size-n)])
 
 def main():
-	baseDir = '/home/nick/whale/'
+	baseDir = '/Users/sjuvekar/Kaggle/moby/'
 	dataDir = baseDir+'data/'
 
 	# Open up the train file

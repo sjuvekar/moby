@@ -13,7 +13,7 @@ import cv2
 
 def main():
 	###################### WORKING DIRECTORY ########################
-	baseDir = '/home/nick/whale/'
+	baseDir = '/Users/sjuvekar/Kaggle/moby/'
 
 	###################### SET OUTPUT FILE NAME HERE ########################
 	testOutFile = baseDir+'workspace/testMetrics.csv'
@@ -28,7 +28,7 @@ def main():
 	test = fileio.TestData(dataDir+'test/')
 
 	##################### BUILD A TemplateManager OBJECT ####################
-	tmplFile = baseDir+'moby/templateReduced.csv'
+	tmplFile = baseDir+'templateReduced.csv'
 	tmpl = templateManager.TemplateManager(fileName=tmplFile, 
 		trainObj=train, params=params)
 
